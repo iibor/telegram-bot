@@ -1,10 +1,10 @@
 const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
-const token = process.env.BOT_TOKEN;
+const token = '1064775969:AAG3lx_tXkBvWeSSlWyMWc_4RtPGdBlaZYs';
 const bot = new TelegramBot(token, {polling:true});
 const request = require('request');
 const movieUrl = 'http://www.omdbapi.com/?t=';
-const movieApi = process.env.MOVIE_API_KEY;
+const movieApi = '3456f12b';
 
 
 bot.onText(/\/movie (.+)/, (msg, match) => {
